@@ -1,13 +1,13 @@
-# twitterCase
+# TwitterCase
 
 application to consumes twitter API and save values on database.
 
-#to run application
+# Run application
 
 node gravaTagsNoDatabase
 node pesquisaDeterminadaTag
 
-# mysql
+# Mysql
 
 to create table:
 
@@ -22,6 +22,6 @@ ALTER DATABASE twitter_case CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci';
 ALTER TABLE twitter_case CONVERT TO CHARACTER SET utf8mb4;
 ALTER TABLE twitter_case.twittes MODIFY COLUMN contexto text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
 
-#Docker
+# Docker
 
 docker build --rm -f "twitterCase/Dockerfile" -t twittercase:1.0.0 twitterCase
