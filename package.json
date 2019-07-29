@@ -4,7 +4,9 @@
   "description": "application to consumes twitter API and save values on database.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pesquisa": "node pesquisaDeterminadaTag.js",
+    "grava": "node gravaTagsNoDatabase.js"
   },
   "author": "",
   "license": "ISC",
