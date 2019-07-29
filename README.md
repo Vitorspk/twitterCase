@@ -4,6 +4,12 @@ application to consumes twitter API and save values on database.
 
 # Docker
 
+looking for dockerhub ?
+Follow link to pull image:
+
+docker pull vitorspk/twittercase
+
+
 docker build --rm -f "twitterCase/Dockerfile" -t twittercase:1.0.0 twitterCase
 
 # Run application
