@@ -1,7 +1,7 @@
 {
   "name": "teste",
   "version": "1.0.0",
-  "description": "",
+  "description": "application to consumes twitter API and save values on database.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,15 +9,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parse": "^0.1.0",
     "chalk": "^2.4.2",
     "chalk-pipe": "^2.0.0",
-    "consign": "^0.1.6",
-    "ejs": "^2.6.2",
-    "express": "^4.17.1",
     "inquirer": "^6.5.0",
-    "mysql": "^2.17.1",
     "mysql-json": "^0.1.3",
     "twitter": "^1.7.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vitorspk/twitterCase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Vitorspk/twitterCase/issues"
+  },
+  "homepage": "https://github.com/Vitorspk/twitterCase#readme"
 }
