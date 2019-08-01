@@ -11,28 +11,26 @@ var questions = [
   }
 ];
 
-try {
-  inquirer.prompt(questions).then(answers => {
+const execute = async () => {
 
-    var j = JSON.stringify(answers.tag);
+  const answers = await inquirer.prompt(questions);
 
-    T.get('search/tweets', { q: j, count: 100 }, function(err, data, response){
+  var j = JSON.stringify(answers.tag);
 
-      if(err){
-        return console.log(err);
-      }
+  T.get('search/tweets', { q: j, count: 100 }, function (err, data, response) {
 
-      for(let i = 0; i < data.statuses.length; i++){
-        console.log(data.statuses[i].text);
-        let name = { name: data.statuses[i].user.name}
-        console.log(name);
-      }
+    if (err) {
+      return console.log(err);
+    }
 
-    });
+    for (let i = 0; i < data.statuses.length; i++) {
+      console.log(data.statuses[i].text);
+      let name = { name: data.statuses[i].user.name }
+      console.log(name);
+    }
   });
-} catch (err) {
-  console.error(err)
+
 }
 
-
+execute().catch((error) => console.log(error));
 

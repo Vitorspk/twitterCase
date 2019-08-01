@@ -24,9 +24,9 @@ var valores = [
 ];
 
 
-for(let i = 0; i < valores.length; i++){
+for(const valor of valores){
 
-  T.get('search/tweets', { q: valores[i],count: 1, result_type: 'recent'}, function(err, data, response){
+  T.get('search/tweets', { q: valor,count: 1, result_type: 'recent'}, function(err, data, response){
     if(err){
       return console.log(err);
     }
